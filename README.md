@@ -42,12 +42,14 @@ To use NoteHive locally, follow these steps:
 5. Click the "Save Note" button to save the new note.
 6. To delete a note, click on the existing note in the list and then click the "Delete" button.
 
-## Technologies Used
+## Technologies
 
 - Express.js
 - Node.js
 - UUID (for generating unique IDs)
-- HTML/CSS/JavaScript
+- HTML
+- CSS
+- JavaScript 
 
 ## Deployment
 
