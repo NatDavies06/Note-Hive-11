@@ -53,7 +53,7 @@ To use NoteHive locally, follow these steps:
 
 ## Deployment
 
-
+Coming soon!
 
 ## Screenshots
 
@@ -68,10 +68,6 @@ Contributions are welcome! If you'd like to contribute to NoteHive, please follo
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin feature/my-feature`)
 5. Create a new Pull Request
-
-## Credits
-
-This application was created as part of a coding challenge. The front end was provided, and the back end was implemented by Nathan Davis.
 
 ## License
 
