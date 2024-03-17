@@ -9,17 +9,16 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
 // Routes
-// GET notes and Return the notes.html file
+// GET /notes - Return the notes.html file
 app.get('/notes', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'notes.html'));
+  res.sendFile(path.join(__dirname, 'develop', 'public', 'notes.html'));
 });
 
-// Return the index.html file
+// GET * - Return the index.html file
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'develop', 'public', 'index.html'));
 });
 
-// Read the db.json file and return all saved notes as JSON
 app.get('/api/notes', (req, res) => {
   fs.readFile('db.json', 'utf8', (err, data) => {
     if (err) {
@@ -30,7 +29,7 @@ app.get('/api/notes', (req, res) => {
   });
 });
 
-// Receive a new note to save on the request body, add it to the db.json file, and return the new note
+// POST /api/notes - Receive a new note to save on the request body, add it to the db.json file, and return the new note
 app.post('/api/notes', (req, res) => {
   const newNote = req.body;
   fs.readFile('db.json', 'utf8', (err, data) => {
@@ -55,3 +54,4 @@ app.post('/api/notes', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
+
