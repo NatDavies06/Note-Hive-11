@@ -4,7 +4,7 @@
   "description": "NoteHive is a note-taking application that allows users to write and save notes. It provides a convenient way for anyone to organize their thoughts and keep track of tasks they need to complete.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified",
     "start": "node server.js"
   },
   "keywords": [],
