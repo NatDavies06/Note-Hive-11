@@ -29,7 +29,7 @@ To use NoteHive locally, follow these steps:
 
 4. Start the server:
 
-    `npm start`
+    `node server.js`
 
 5. Open you browser and go to 'http://localhost:3000' to access the application.
 
@@ -57,7 +57,7 @@ Coming soon!
 
 ## Screenshots
 
-Screenshots comming soon!
+<img width="720" alt="Screen Shot 2024-03-17 at 7 47 26 PM" src="https://github.com/NatDavies06/Note-Hive-11/assets/153016845/5bc44bd6-414c-4c1d-a8b1-3f3d2b9a0f66">
 
 ## Contributing
 
