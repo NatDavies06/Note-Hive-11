@@ -53,7 +53,7 @@ To use NoteHive locally, follow these steps:
 
 ## Deployment
 
-Coming soon!
+[NoteHive](https://natdavies06.github.io/Note-Hive-11/)
 
 ## Screenshots
 
