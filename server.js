@@ -11,12 +11,12 @@ app.use(express.json());
 // Routes
 // GET /notes - Return the notes.html file
 app.get('/notes', (req, res) => {
-  res.sendFile(path.join(__dirname, 'develop', 'public', 'notes.html'));
+  res.sendFile(path.join(__dirname, 'public', 'notes.html'));
 });
 
 // GET * - Return the index.html file
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'develop', 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // GET /api/notes - Read the db.json file and return all saved notes as JSON
