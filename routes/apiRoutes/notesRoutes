@@ -1,0 +1,27 @@
+const router = require('express').Router();
+const { createNewNote, deleteNote } = require('/notes.html');
+let { notesArray } = require('../../db/notes');
+
+// Making notes availiable  
+router.get('/notes', (req, res) => {
+  let results = notesArray;
+  res.json(results);
+});
+
+router.post('/notes', (req, res) => {
+  // Set id based on what the next index of the array is
+  if(notesArray){
+  req.body.id = notesArray.length.toString();
+  } else 
+  {req.body.id = 0}
+  res.json(createNewNote(req.body, notesArray));
+});
+
+// Route parameters
+router.delete('/notes/:id', async (req, res) => {
+  const { id } = req.params
+  notesArray = await deleteNote(id, notesArray);
+  res.json(notesArray);
+});
+
+module.exports = router;
